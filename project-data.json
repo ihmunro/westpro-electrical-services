@@ -1,0 +1,208 @@
+{
+  "id": "0a0f4bec-b737-4343-afcf-72a36e18ebed",
+  "name": "Westpro Electrical Services",
+  "theme_id": "",
+  "data": {
+    "business_identity": {
+      "business_name": "WESTPRO ELECTRICAL SERVICES",
+      "slogan": "Your Local Electrician in the Calgary Area",
+      "business_type": "Residential Electrical Services",
+      "location": "122 Valley Stream Circle NW, Calgary, AB, T3B 5W2",
+      "operating_hours": "",
+      "service_area": "Calgary, Northwest Calgary, Northeast Calgary, Southwest Calgary, Southeast Calgary, and Cochrane"
+    },
+    "branding": {
+      "primary_color": "#1b2a4a",
+      "secondary_color": "#e8920a",
+      "accent_color": "#00b8d8",
+      "theme_preference": "Clean",
+      "style_mood": "Clean and professional",
+      "logo_url": "https://d14ty28lkqz1hw.cloudfront.net/data/org/17793/theme/26680/img/logo.png",
+      "heading_font": "Poppins",
+      "body_font": "Open Sans"
+    },
+    "contact": {
+      "whatsapp_number": "",
+      "whatsapp_message": "",
+      "email": "",
+      "email_subject": "",
+      "phone": "(403) 891-3257",
+      "facebook_url": "",
+      "instagram_url": "",
+      "google_maps_link": ""
+    },
+    "usp": [
+      "Licensed residential electrician",
+      "Fully insured and bonded",
+      "Quick response and reasonably priced service",
+      "Upfront pricing with a free quote before work begins",
+      "More than 20 years of experience",
+      "100% satisfaction guarantee",
+      "Flexible hours",
+      "Financing available",
+      "BBB Accredited with an A+ Rating and HomeStars Verified"
+    ],
+    "services": [
+      {
+        "name": "Electrical Service & Repairs",
+        "description": "All-encompassing range of electrical services and repairs for homeowners, including fixing faulty circuits, replacing outlets, and adding interconnected smoke detectors.",
+        "price": "",
+        "image_url": "https://d2wvwvig0d1mx7.cloudfront.net/data/org/17793/media/img/cache/3220x0/1891302_3220x0.jpg",
+        "extra_info": "",
+        "badge": ""
+      },
+      {
+        "name": "Aluminum Wiring Inspection & Repairs",
+        "description": "Inspection, evaluation, repair, replacement, and certificate of inspection services for homes with aluminum branch wiring.",
+        "price": "",
+        "image_url": "",
+        "extra_info": "",
+        "badge": ""
+      },
+      {
+        "name": "Electrical Troubleshooting And Repairs",
+        "description": "Diagnosis and repair of faulty electrical circuits and components, including breakers tripping, faulty outlets, inoperable lighting, and overloaded circuits.",
+        "price": "",
+        "image_url": "",
+        "extra_info": "",
+        "badge": ""
+      },
+      {
+        "name": "Electrical Renovations",
+        "description": "Electrical upgrades for home renovations, including new wiring, lighting, pot lights, added outlets, relocated switches, and appliance circuits.",
+        "price": "",
+        "image_url": "",
+        "extra_info": "",
+        "badge": ""
+      },
+      {
+        "name": "Whole Home Surge Protection",
+        "description": "Whole home surge protection services.",
+        "price": "",
+        "image_url": "",
+        "extra_info": "",
+        "badge": ""
+      },
+      {
+        "name": "Electrical Panel Upgrades",
+        "description": "Electrical panel upgrade services for residential homes.",
+        "price": "",
+        "image_url": "",
+        "extra_info": "",
+        "badge": ""
+      },
+      {
+        "name": "Smoke Detectors Installation",
+        "description": "Smoke and CO detector installation services.",
+        "price": "",
+        "image_url": "",
+        "extra_info": "",
+        "badge": ""
+      },
+      {
+        "name": "Electrical Car Charging Station",
+        "description": "Residential EV charging station installation with evaluation for cost-effective placement and installation.",
+        "price": "",
+        "image_url": "",
+        "extra_info": "",
+        "badge": "New"
+      },
+      {
+        "name": "Hot Tub Electrical Installation",
+        "description": "Hot tub electrical installation services.",
+        "price": "",
+        "image_url": "",
+        "extra_info": "",
+        "badge": ""
+      },
+      {
+        "name": "Lighting Upgrade",
+        "description": "Residential lighting upgrade services.",
+        "price": "",
+        "image_url": "",
+        "extra_info": "",
+        "badge": ""
+      },
+      {
+        "name": "Electrical Inspections",
+        "description": "Electrical inspection services for residential properties.",
+        "price": "",
+        "image_url": "",
+        "extra_info": "",
+        "badge": ""
+      },
+      {
+        "name": "Smart Home Automation Systems Calgary AB",
+        "description": "Lutron smart home automation solutions, from single-room setups to whole-house systems, including Caseta Wireless and RadioRA solutions.",
+        "price": "",
+        "image_url": "",
+        "extra_info": "",
+        "badge": "New"
+      }
+    ],
+    "hero_images": [
+      "https://d2wvwvig0d1mx7.cloudfront.net/data/org/17793/media/img/cache/3220x0/1891302_3220x0.jpg"
+    ],
+    "testimonials": [],
+    "how_it_works": [
+      {
+        "description": "Call Westpro Electrical Services and speak directly to a qualified electrician about your electrical issue or project"
+      },
+      {
+        "description": "Westpro evaluates the issue, explains the problem, lays out the solution, and provides a fair estimate or free quote"
+      },
+      {
+        "description": "Schedule the work at a time that fits your schedule"
+      },
+      {
+        "description": "Westpro completes the work with professional service, tidy workmanship, and a focus on customer satisfaction"
+      }
+    ],
+    "faq": [
+      {
+        "question": "What areas do you serve?",
+        "answer": "Calgary, Northwest Calgary, Northeast Calgary, Southwest Calgary, Southeast Calgary, and Cochrane."
+      },
+      {
+        "question": "Do you provide free quotes?",
+        "answer": "Yes. You will receive a free quote before work begins, with no obligation."
+      },
+      {
+        "question": "Do you charge overtime or hidden fees?",
+        "answer": "No. Westpro states that it offers upfront pricing with no overtime charge or hidden fees."
+      },
+      {
+        "question": "Do you offer financing?",
+        "answer": "Yes. Westpro partners with Financeit.ca to offer flexible payment options."
+      },
+      {
+        "question": "What kind of electrical work do you specialize in?",
+        "answer": "Residential electrical services, including repairs, troubleshooting, renovations, inspections, panel upgrades, lighting, EV charging stations, hot tubs, smoke detectors, surge protection, aluminum wiring work, and smart home automation."
+      }
+    ],
+    "cta": {
+      "primary_text": "Get a Free Quote",
+      "primary_link": "phone",
+      "secondary_text": "View Services"
+    },
+    "extra_features": {
+      "google_map_embed": true,
+      "back_to_top": true,
+      "sticky_contact": true,
+      "social_icons_footer": true,
+      "service_badges": true
+    },
+    "section_titles": {
+      "services": "Our Services",
+      "services_label": "What We Do",
+      "how_it_works": "How It Works",
+      "how_it_works_label": "Our Process",
+      "testimonials": "What Our Customers Say",
+      "faq": "Frequently Asked Questions",
+      "contact": "Contact Us",
+      "contact_label": "Get In Touch"
+    }
+  },
+  "created_at": "2026-04-12T22:46:01.692361+00:00",
+  "updated_at": "2026-04-12T23:10:47.024920+00:00"
+}
