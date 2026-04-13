@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WESTPRO ELECTRICAL SERVICES | Your Local Electrician in the Calgary Area</title>
+<meta name="description" content="Residential Electrical Services — Your Local Electrician in the Calgary Area. Serving Calgary, Northwest Calgary, Northeast Calgary, Southwest Calgary, Southeast Calgary, and Cochrane">
+<meta property="og:title" content="WESTPRO ELECTRICAL SERVICES">
+<meta property="og:description" content="Your Local Electrician in the Calgary Area">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;800;900&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--navy:#1b2a4a;--navy-dark:#0f1a2e;--navy-mid:#223060;
+--orange:#e8920a;--orange-dark:#c97808;--orange-light:rgba(232,146,10,.12);
+--cyan:#00b8d8;--cyan-dark:#0099b8;
+--white:#fff;--off-white:#f5f7fa;--gray:#6b7280;--gray-light:#e5e7eb;--text:#1f2937;
+--hf:'Barlow Condensed','Poppins',sans-serif;--bf:'Barlow','Open Sans',sans-serif;
+--shadow:0 4px 24px rgba(27,42,74,.11);--shadow-lg:0 8px 40px rgba(27,42,74,.18);
+--r:8px;--tr:all .3s ease;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--bf);color:var(--text);background:var(--white);line-height:1.65;overflow-x:hidden}
+a{text-decoration:none;color:inherit}ul{list-style:none}
+h1,h2,h3,h4{font-family:var(--hf);font-weight:700;line-height:1.15}
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.tag{font-family:var(--hf);font-size:.82rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:.6rem;display:block}
+.sec-title{color:var(--navy);font-size:clamp(2rem,4vw,3rem)}
+.sec-title span{color:var(--orange)}
+.sec-sub{color:var(--gray);font-size:1.05rem;margin-top:.75rem;max-width:620px}
+.sec-head{margin-bottom:3rem}.sec-head.c{text-align:center}.sec-head.c .sec-sub{margin-left:auto;margin-right:auto}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:var(--r);font-family:var(--hf);font-size:1.05rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;border:2px solid transparent;transition:var(--tr);white-space:nowrap}
+.btn-o{background:var(--orange);color:var(--white);border-color:var(--orange)}.btn-o:hover{background:var(--orange-dark);border-color:var(--orange-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(232,146,10,.4)}
+.btn-wh{background:transparent;color:var(--white);border-color:rgba(255,255,255,.6)}.btn-wh:hover{background:var(--white);color:var(--navy);border-color:var(--white)}
+.btn-nv{background:transparent;color:var(--navy);border-color:var(--navy)}.btn-nv:hover{background:var(--navy);color:var(--white)}
+/* Animations */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.rvl{opacity:0;transform:translateX(-28px);transition:opacity .65s ease,transform .65s ease}
+.rvr{opacity:0;transform:translateX(28px);transition:opacity .65s ease,transform .65s ease}
+.rv.on,.rvl.on,.rvr.on{opacity:1;transform:none}
+/* HEADER */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--white);box-shadow:0 2px 16px rgba(0,0,0,.07);transition:var(--tr)}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 1.5rem;height:68px}
+.logo{display:flex;align-items:center;gap:.6rem}
+.logo img{height:38px}
+.logo-text{display:flex;flex-direction:column;line-height:1}
+.logo-top{font-family:var(--hf);font-size:1.55rem;font-weight:900;color:var(--navy);letter-spacing:1px}
+.logo-bot{font-family:var(--hf);font-size:.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--white);background:var(--orange);padding:2px 7px;display:inline-block;margin-top:1px}
+.nav-links{display:flex;align-items:center;gap:1.75rem}
+.nav-links a{font-family:var(--hf);font-size:1rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--navy);transition:var(--tr);position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:2px;background:var(--orange);transition:width .3s}
+.nav-links a:hover{color:var(--orange)}.nav-links a:hover::after{width:100%}
+.hdr-cta{display:flex;align-items:center;gap:1rem}
+.hdr-phone{font-family:var(--hf);font-size:1.1rem;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:.4rem;transition:var(--tr)}
+.hdr-phone:hover{color:var(--orange)}.hdr-phone i{color:var(--orange)}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.ham span{display:block;width:24px;height:2.5px;background:var(--navy);border-radius:2px;transition:var(--tr)}
+.ham.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}.ham.open span:nth-child(2){opacity:0}.ham.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+.mob-nav{display:none;position:fixed;top:68px;left:0;right:0;background:var(--white);z-index:999;padding:1.5rem;flex-direction:column;box-shadow:0 8px 30px rgba(0,0,0,.1)}
+.mob-nav.open{display:flex}
+.mob-nav a{font-family:var(--hf);font-size:1.15rem;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.5px;padding:.75rem 0;border-bottom:1px solid var(--gray-light);transition:var(--tr)}
+.mob-nav a:hover{color:var(--orange)}
+/* HERO */
+.hero{min-height:100vh;background:var(--navy);position:relative;display:flex;align-items:center;overflow:hidden;padding-top:70px}
+.hero-bg{position:absolute;inset:0}
+.hero-bg::before{content:'';position:absolute;top:0;right:0;width:52%;height:100%;background:color-mix(in srgb,var(--navy) 85%,#000);clip-path:polygon(18% 0,100% 0,100% 100%,0% 100%)}
+.hero-shape1{position:absolute;bottom:0;right:12%;width:0;height:0;border-left:180px solid transparent;border-bottom:300px solid rgba(0,184,216,.06)}
+.hero-shape2{position:absolute;top:15%;right:6%;width:120px;height:120px;background:rgba(232,146,10,.05);transform:rotate(45deg)}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:32px 32px}
+.hero-img-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.12}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;width:100%;max-width:1200px;margin:0 auto;padding:5rem 1.5rem}
+.hero-pill{display:inline-flex;align-items:center;gap:.5rem;background:var(--orange-light);border:1px solid rgba(232,146,10,.25);color:var(--orange);font-family:var(--hf);font-size:.82rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:.35rem 1rem;border-radius:50px;margin-bottom:1.5rem}
+.hero-h1{font-size:clamp(2.8rem,5.5vw,4.5rem);font-weight:900;color:var(--white);text-transform:uppercase;letter-spacing:-.5px;margin-bottom:1.25rem;line-height:1.05}
+.hero-h1 span{color:var(--orange)}
+.hero-p{color:rgba(255,255,255,.72);font-size:1.1rem;font-weight:300;margin-bottom:2rem;max-width:500px}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.hero-trust{display:flex;flex-direction:column;gap:.6rem}
+.hero-trust-row{display:flex;align-items:center;gap:.5rem;color:rgba(255,255,255,.65);font-size:.9rem}
+.hero-trust-row i{color:var(--orange);width:16px}
+.hero-cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.hcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:var(--r);padding:1.5rem 1.25rem;text-align:center;backdrop-filter:blur(8px);transition:var(--tr)}
+.hcard:hover{background:rgba(255,255,255,.09);transform:translateY(-4px);border-color:rgba(232,146,10,.3)}
+.hcard-num{font-family:var(--hf);font-size:2.6rem;font-weight:900;color:var(--orange);line-height:1}
+.hcard-lbl{font-family:var(--hf);font-size:.8rem;font-weight:600;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:1px;margin-top:.3rem}
+/* TRUST BAR */
+.tbar{background:color-mix(in srgb,var(--navy) 90%,#000);padding:1.25rem 0}
+.tbar-inner{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.75rem 2rem}
+.ti{display:flex;align-items:center;gap:.55rem;color:rgba(255,255,255,.85);font-family:var(--hf);font-size:.95rem;font-weight:600;letter-spacing:.4px}
+.ti i{color:var(--orange)}.ti-div{width:1px;height:16px;background:rgba(255,255,255,.15)}
+/* SERVICES */
+.services{padding:5.5rem 0;background:var(--off-white)}
+.filter-bar{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2.5rem}
+.fb{font-family:var(--hf);font-size:.92rem;font-weight:600;letter-spacing:.4px;text-transform:uppercase;padding:.5rem 1.25rem;border-radius:50px;border:2px solid var(--gray-light);background:var(--white);color:var(--gray);cursor:pointer;transition:var(--tr)}
+.fb:hover,.fb.act{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.5rem}
+.sc{background:var(--white);border-radius:var(--r);padding:2rem;box-shadow:var(--shadow);transition:var(--tr);position:relative;overflow:hidden;border:2px solid transparent}
+.sc::after{content:'';position:absolute;left:0;top:0;width:3px;height:100%;background:var(--orange);transform:scaleY(0);transform-origin:bottom;transition:transform .3s ease}
+.sc:hover{border-color:rgba(232,146,10,.3);transform:translateY(-5px);box-shadow:var(--shadow-lg)}.sc:hover::after{transform:scaleY(1)}
+.sc-icon{width:50px;height:50px;border-radius:12px;background:rgba(27,42,74,.07);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;transition:var(--tr)}
+.sc:hover .sc-icon{background:var(--navy)}.sc-icon i{color:var(--navy);transition:var(--tr);font-size:1.1rem}.sc:hover .sc-icon i{color:var(--white)}
+.sc-name{font-family:var(--hf);font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:.5rem}
+.sc-desc{font-size:.9rem;color:var(--gray);line-height:1.65}
+.badge{position:absolute;top:1rem;right:1rem;font-family:var(--hf);font-size:.7rem;font-weight:700;letter-spacing:1px;padding:.2rem .65rem;border-radius:50px;text-transform:uppercase}
+.badge-new{background:var(--cyan);color:var(--white)}.badge-pop{background:var(--orange);color:var(--white)}
+/* PROCESS */
+.process{padding:5.5rem 0;background:var(--white)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;position:relative}
+.step{text-align:center;position:relative;z-index:1}
+.step-n{width:78px;height:78px;border-radius:50%;background:var(--navy);color:var(--white);font-family:var(--hf);font-size:2rem;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;border:4px solid var(--white);box-shadow:0 0 0 3px var(--navy),var(--shadow);transition:var(--tr)}
+.step:hover .step-n{background:var(--orange);box-shadow:0 0 0 3px var(--orange),var(--shadow-lg)}
+.step h3{font-family:var(--hf);font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:.6rem}
+.step p{font-size:.9rem;color:var(--gray);line-height:1.65}
+/* ABOUT */
+.about{padding:5.5rem 0;background:var(--navy);position:relative;overflow:hidden}
+.about::before{content:'';position:absolute;top:-100px;right:-100px;width:500px;height:500px;border-radius:50%;background:rgba(0,184,216,.05);pointer-events:none}
+.about .tag{color:var(--cyan)}.about .sec-title{color:var(--white)}.about .sec-sub{color:rgba(255,255,255,.65);max-width:none}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.apts{margin-top:2rem;display:flex;flex-direction:column;gap:1.25rem}
+.apt{display:flex;align-items:flex-start;gap:1rem}
+.apt-ico{width:38px;height:38px;border-radius:8px;background:var(--orange-light);border:1px solid rgba(232,146,10,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.apt-ico i{color:var(--orange)}
+.apt h4{font-family:var(--hf);font-size:1rem;font-weight:700;color:var(--white);margin-bottom:.15rem}
+.apt p{font-size:.87rem;color:rgba(255,255,255,.55)}
+.certs{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.cert{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:var(--r);padding:1.75rem 1.25rem;text-align:center;transition:var(--tr)}
+.cert:hover{background:rgba(255,255,255,.08);transform:translateY(-4px);border-color:rgba(232,146,10,.2)}
+.cert-em{font-size:2.4rem;margin-bottom:.75rem}
+.cert h4{font-family:var(--hf);font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:.25rem}
+.cert p{font-size:.8rem;color:rgba(255,255,255,.45)}
+/* FAQ */
+.faq{padding:5.5rem 0;background:var(--white)}
+.faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:.85rem}
+.fi{border:2px solid var(--gray-light);border-radius:var(--r);overflow:hidden;transition:border-color .3s}
+.fi.open{border-color:var(--orange)}
+.fq{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 1.5rem;cursor:pointer;background:var(--white);transition:background .3s;gap:1rem}
+.fi.open .fq{background:var(--navy)}
+.fq-txt{font-family:var(--hf);font-size:1.08rem;font-weight:700;color:var(--navy);transition:color .3s}
+.fi.open .fq-txt{color:var(--white)}
+.fq-ico{width:28px;height:28px;border-radius:50%;background:rgba(27,42,74,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:var(--tr)}
+.fi.open .fq-ico{background:var(--orange);transform:rotate(45deg)}
+.fq-ico i{color:var(--navy);transition:color .3s;font-size:.75rem}.fi.open .fq-ico i{color:var(--white)}
+.fa{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s}
+.fi.open .fa{max-height:300px;padding:1.25rem 1.5rem}
+.fa p{font-size:.95rem;color:var(--gray)}
+/* AREAS */
+.areas{padding:5rem 0;background:var(--navy)}
+.areas .tag{color:var(--cyan)}.areas .sec-title{color:var(--white)}.areas .sec-sub{color:rgba(255,255,255,.6)}
+.chips{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2rem}
+.chip{display:flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);color:var(--white);font-family:var(--hf);font-size:1rem;font-weight:600;padding:.6rem 1.4rem;border-radius:50px;transition:var(--tr)}
+.chip i{color:var(--cyan)}.chip:hover{background:var(--orange);border-color:var(--orange)}.chip:hover i{color:var(--white)}
+/* FINANCING BANNER */
+.fin-ban{padding:4rem 0;background:var(--off-white);position:relative;overflow:hidden}
+.fin-inner{display:flex;align-items:center;gap:3rem;background:var(--white);border-radius:var(--r);box-shadow:var(--shadow-lg);padding:3rem;border:2px solid var(--orange);position:relative}
+.fin-inner::before{content:'';position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--orange);border-radius:var(--r) 0 0 var(--r)}
+.fin-icon{width:90px;height:90px;border-radius:16px;background:var(--orange-light);border:2px solid rgba(232,146,10,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.fin-icon i{font-size:2.2rem;color:var(--orange)}
+.fin-body{flex:1}
+.fin-body .tag{margin-bottom:.4rem}
+.fin-body h3{font-family:var(--hf);font-size:clamp(1.4rem,2.5vw,1.8rem);font-weight:800;color:var(--navy);margin-bottom:.6rem}
+.fin-body p{color:var(--gray);font-size:.95rem;line-height:1.7;max-width:580px}
+.fin-body p a{color:var(--orange);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.fin-body p a:hover{color:var(--orange-dark)}
+.fin-cta{flex-shrink:0}
+@media(max-width:768px){.fin-inner{flex-direction:column;text-align:center;gap:1.5rem;padding:2rem}.fin-cta{width:100%}.fin-cta .btn{width:100%;justify-content:center}}
+/* CTA BAND */
+.cta-band{background:var(--orange);padding:3rem 0}
+.cta-band-inner{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.cta-band h2{font-family:var(--hf);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:900;color:var(--white);text-transform:uppercase}
+.cta-band p{color:rgba(255,255,255,.8);margin-top:.3rem;font-size:1rem}
+.btn-cta-wh{background:var(--white);color:var(--orange);border-color:var(--white);font-family:var(--hf);font-size:1.05rem;font-weight:800;padding:1rem 2.25rem;border-radius:var(--r);display:inline-flex;align-items:center;gap:.5rem;text-transform:uppercase;letter-spacing:1px;transition:var(--tr);border:2px solid var(--white)}
+.btn-cta-wh:hover{background:var(--navy);color:var(--white);border-color:var(--navy);transform:translateY(-2px)}
+/* CONTACT */
+.contact{padding:5.5rem 0;background:var(--off-white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:3rem;align-items:start}
+.cc-list{display:flex;flex-direction:column;gap:1.25rem}
+.cc{background:var(--white);border-radius:var(--r);padding:1.35rem 1.5rem;display:flex;align-items:center;gap:1.2rem;box-shadow:var(--shadow);transition:var(--tr);border-left:3px solid transparent}
+.cc:hover{transform:translateX(6px);box-shadow:var(--shadow-lg);border-left-color:var(--orange)}
+.cc-ico{width:46px;height:46px;border-radius:10px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cc-ico i{color:var(--white)}
+.cc-lbl{font-size:.75rem;color:var(--gray);text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.cc-val{font-family:var(--hf);font-size:1.15rem;font-weight:700;color:var(--navy);line-height:1.3}
+.cc-val a{color:inherit;transition:var(--tr)}.cc-val a:hover{color:var(--orange)}
+.map-wrap{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-lg);height:100%;min-height:420px}
+.map-wrap iframe{width:100%;height:100%;min-height:420px;border:none;display:block}
+/* FOOTER */
+.footer{background:#0a1225;color:rgba(255,255,255,.55)}
+.ft{padding:3.5rem 0;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2.5rem;max-width:1200px;margin:0 auto;padding-left:1.5rem;padding-right:1.5rem}
+.ft-brand p{font-size:.88rem;margin-top:1rem;line-height:1.75}
+.ft-col h4{font-family:var(--hf);font-size:1rem;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:1.25rem}
+.ft-col ul{display:flex;flex-direction:column;gap:.65rem}
+.ft-col ul li a{font-size:.87rem;transition:var(--tr)}.ft-col ul li a:hover{color:var(--orange)}
+.fb-bar{border-top:1px solid rgba(255,255,255,.07);padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:center;max-width:1200px;margin:0 auto}
+.fb-bar p{font-size:.8rem;text-align:center}
+/* BTT */
+.btt{position:fixed;bottom:2rem;right:2rem;width:46px;height:46px;background:var(--navy);color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:var(--shadow);transition:var(--tr);opacity:0;pointer-events:none;z-index:800;border:none}
+.btt.show{opacity:1;pointer-events:all}.btt:hover{background:var(--orange);transform:translateY(-3px)}
+.mob-float{display:none;position:fixed;bottom:1.25rem;left:50%;transform:translateX(-50%);z-index:800}
+.mob-float a{display:flex;align-items:center;gap:.5rem;background:var(--orange);color:var(--white);font-family:var(--hf);font-size:1.05rem;font-weight:800;letter-spacing:1px;padding:.9rem 2rem;border-radius:50px;box-shadow:0 6px 28px rgba(232,146,10,.45);text-transform:uppercase;transition:var(--tr)}
+.mob-float a:hover{background:var(--orange-dark)}
+@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.hero-cards{grid-template-columns:repeat(4,1fr);max-width:600px}.about-grid{grid-template-columns:1fr;gap:2.5rem}.contact-grid{grid-template-columns:1fr}.ft{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.nav-links,.hdr-cta{display:none}.ham{display:flex}.hero-cards{grid-template-columns:1fr 1fr;max-width:100%}.hero-inner{padding:3rem 1.5rem}.mob-float{display:block}.btt{bottom:5rem}.cta-band-inner{flex-direction:column;text-align:center}}
+@media(max-width:540px){.hero-cards{grid-template-columns:1fr 1fr}.hero-btns{flex-direction:column}.hero-btns .btn{justify-content:center}.certs{grid-template-columns:1fr}.ft{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<!-- HEADER -->
+<header class="hdr">
+<div class="hdr-inner">
+<a href="#" class="logo">
+<img src="https://d14ty28lkqz1hw.cloudfront.net/data/org/17793/theme/26680/img/logo.png" alt="WESTPRO ELECTRICAL SERVICES">
+<div class="logo-text"><span class="logo-top">WESTPRO</span><span class="logo-bot">ELECTRICAL SERVICES</span></div>
+</a>
+<nav class="nav-links">
+<a href="#services">Services</a>
+<a href="#process">Process</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="hdr-cta">
+<a href="tel:(403) 891-3257" class="hdr-phone"><i class="fas fa-phone"></i> (403) 891-3257</a>
+</div>
+<button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+</div>
+</header>
+<nav class="mob-nav" id="mobNav">
+<a href="#services">Services</a>
+<a href="#process">Process</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+<a href="tel:(403) 891-3257" class="mob-cta" style="color:var(--orange);border-bottom:none;margin-top:1rem"><i class="fas fa-phone"></i> (403) 891-3257</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg">
+<div class="hero-shape1"></div><div class="hero-shape2"></div><div class="hero-dots"></div>
+<div class="hero-img-bg" style="background-image:url('https://d2wvwvig0d1mx7.cloudfront.net/data/org/17793/media/img/cache/3220x0/1891302_3220x0.jpg')"></div>
+</div>
+<div class="hero-inner">
+<div>
+<div class="hero-pill rv"><i class="fas fa-award"></i> Residential Electrical Services</div>
+<h1 class="hero-h1 rv">Your Local Electrician in the Calgary Area</h1>
+<p class="hero-p rv">Residential Electrical Services. Serving Calgary, Northwest Calgary, Northeast Calgary, Southwest Calgary, Southeast Calgary, and Cochrane with honest upfront pricing and guaranteed workmanship.</p>
+<div class="hero-btns rv">
+<a href="tel:(403) 891-3257" class="btn btn-o"><i class="fas fa-phone"></i> Get a Free Quote</a>
+<a href="#services" class="btn btn-wh">View Services</a>
+</div>
+<div class="hero-trust rv">
+
+<div class="hero-trust-row"><i class="fas fa-check-circle"></i> Licensed residential electrician</div>
+
+<div class="hero-trust-row"><i class="fas fa-check-circle"></i> Fully insured and bonded</div>
+
+<div class="hero-trust-row"><i class="fas fa-check-circle"></i> Quick response and reasonably priced service</div>
+
+<div class="hero-trust-row"><i class="fas fa-check-circle"></i> Upfront pricing with a free quote before work begins</div>
+
+</div>
+</div>
+<div class="hero-cards rvr">
+<div class="hcard"><div class="hcard-num">20+</div><div class="hcard-lbl">Years Experience</div></div>
+<div class="hcard"><div class="hcard-num">A+</div><div class="hcard-lbl">BBB Rating</div></div>
+<div class="hcard"><div class="hcard-num">100%</div><div class="hcard-lbl">Satisfaction</div></div>
+<div class="hcard"><div class="hcard-num">FREE</div><div class="hcard-lbl">Quote & Estimate</div></div>
+</div>
+</div>
+</section>
+
+<!-- TRUST BAR -->
+
+<div class="tbar">
+<div class="tbar-inner container">
+
+
+<span class="ti"><i class="fas fa-check-circle"></i> Licensed residential electrician</span>
+
+<span class="ti-div"></span>
+<span class="ti"><i class="fas fa-check-circle"></i> Fully insured and bonded</span>
+
+<span class="ti-div"></span>
+<span class="ti"><i class="fas fa-check-circle"></i> Quick response and reasonably priced service</span>
+
+<span class="ti-div"></span>
+<span class="ti"><i class="fas fa-check-circle"></i> Upfront pricing with a free quote before work begins</span>
+
+<span class="ti-div"></span>
+<span class="ti"><i class="fas fa-check-circle"></i> More than 20 years of experience</span>
+
+<span class="ti-div"></span>
+<span class="ti"><i class="fas fa-check-circle"></i> 100% satisfaction guarantee</span>
+
+</div>
+</div>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+<div class="container">
+<div class="sec-head c rv"><span class="tag">What We Do</span><h2 class="sec-title">Our Services</h2><p class="sec-sub">From quick repairs to full upgrades — completed by a licensed professional with guaranteed workmanship.</p></div>
+<div class="svc-grid">
+
+<div class="sc rv">
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Electrical Service & Repairs</div>
+<div class="sc-desc">All-encompassing range of electrical services and repairs for homeowners, including fixing faulty circuits, replacing outlets, and adding interconnected smoke detectors.</div>
+
+</div>
+
+<div class="sc rv">
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Aluminum Wiring Inspection & Repairs</div>
+<div class="sc-desc">Inspection, evaluation, repair, replacement, and certificate of inspection services for homes with aluminum branch wiring.</div>
+
+</div>
+
+<div class="sc rv">
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Electrical Troubleshooting And Repairs</div>
+<div class="sc-desc">Diagnosis and repair of faulty electrical circuits and components, including breakers tripping, faulty outlets, inoperable lighting, and overloaded circuits.</div>
+
+</div>
+
+<div class="sc rv">
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Electrical Renovations</div>
+<div class="sc-desc">Electrical upgrades for home renovations, including new wiring, lighting, pot lights, added outlets, relocated switches, and appliance circuits.</div>
+
+</div>
+
+<div class="sc rv">
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Whole Home Surge Protection</div>
+<div class="sc-desc">Whole home surge protection services.</div>
+
+</div>
+
+<div class="sc rv">
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Electrical Panel Upgrades</div>
+<div class="sc-desc">Electrical panel upgrade services for residential homes.</div>
+
+</div>
+
+<div class="sc rv">
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Smoke Detectors Installation</div>
+<div class="sc-desc">Smoke and CO detector installation services.</div>
+
+</div>
+
+<div class="sc rv">
+
+<span class="badge badge-new">New</span>
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Electrical Car Charging Station</div>
+<div class="sc-desc">Residential EV charging station installation with evaluation for cost-effective placement and installation.</div>
+
+</div>
+
+<div class="sc rv">
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Hot Tub Electrical Installation</div>
+<div class="sc-desc">Hot tub electrical installation services.</div>
+
+</div>
+
+<div class="sc rv">
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Lighting Upgrade</div>
+<div class="sc-desc">Residential lighting upgrade services.</div>
+
+</div>
+
+<div class="sc rv">
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Electrical Inspections</div>
+<div class="sc-desc">Electrical inspection services for residential properties.</div>
+
+</div>
+
+<div class="sc rv">
+
+<span class="badge badge-new">New</span>
+
+<div class="sc-icon"><i class="fas fa-bolt"></i></div>
+<div class="sc-name">Smart Home Automation Systems Calgary AB</div>
+<div class="sc-desc">Lutron smart home automation solutions, from single-room setups to whole-house systems, including Caseta Wireless and RadioRA solutions.</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process" id="process">
+<div class="container">
+<div class="sec-head c rv"><span class="tag">Our Process</span><h2 class="sec-title">How It Works</h2><p class="sec-sub">Getting your work done is simple and stress-free.</p></div>
+<div class="steps">
+
+<div class="step rv">
+<div class="step-n">1</div>
+<p>Call Westpro Electrical Services and speak directly to a qualified electrician about your electrical issue or project</p>
+</div>
+
+<div class="step rv">
+<div class="step-n">2</div>
+<p>Westpro evaluates the issue, explains the problem, lays out the solution, and provides a fair estimate or free quote</p>
+</div>
+
+<div class="step rv">
+<div class="step-n">3</div>
+<p>Schedule the work at a time that fits your schedule</p>
+</div>
+
+<div class="step rv">
+<div class="step-n">4</div>
+<p>Westpro completes the work with professional service, tidy workmanship, and a focus on customer satisfaction</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about">
+<div class="container">
+<div class="about-grid">
+<div class="rvl">
+<span class="tag">Why Choose Us</span>
+<h2 class="sec-title">WESTPRO ELECTRICAL SERVICES</h2>
+<p class="sec-sub">With more than 20 years of experience, we are committed to quality, safety, and complete customer satisfaction.</p>
+<div class="apts">
+
+<div class="apt"><div class="apt-ico"><i class="fas fa-check"></i></div><div><h4>Licensed residential electrician</h4></div></div>
+
+<div class="apt"><div class="apt-ico"><i class="fas fa-check"></i></div><div><h4>Fully insured and bonded</h4></div></div>
+
+<div class="apt"><div class="apt-ico"><i class="fas fa-check"></i></div><div><h4>Quick response and reasonably priced service</h4></div></div>
+
+</div>
+</div>
+<div class="certs rvr">
+<div class="cert"><div class="cert-em"><i class="fas fa-trophy" style="color:var(--orange)"></i></div><h4>BBB Accredited</h4><p>A+ Rating</p></div>
+<div class="cert"><div class="cert-em"><i class="fas fa-check-circle" style="color:var(--cyan)"></i></div><h4>Verified</h4><p>HomeStars Verified</p></div>
+<div class="cert"><div class="cert-em"><i class="fas fa-bolt" style="color:var(--orange)"></i></div><h4>20+ Years</h4><p>Residential expertise</p></div>
+<div class="cert"><div class="cert-em"><i class="fas fa-credit-card" style="color:var(--cyan)"></i></div><h4>Financeit Partner</h4><p>Flexible financing for your projects</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FINANCING -->
+<section class="fin-ban">
+<div class="container">
+<div class="fin-inner rv">
+<div class="fin-icon"><i class="fas fa-hand-holding-usd"></i></div>
+<div class="fin-body">
+<span class="tag">Financing Available</span>
+<h3>Flexible Payment Options for Your Project</h3>
+<p>We are proud to partner with <a href="https://www.financeit.ca/" target="_blank" rel="noopener">Financeit.ca</a> to offer flexible payment options — making electrical work accessible for every homeowner. Get the work done now, pay over time.</p>
+</div>
+<div class="fin-cta">
+<a href="tel:(403) 891-3257" class="btn btn-o"><i class="fas fa-phone"></i> Get a Quote</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+
+<section class="faq" id="faq">
+<div class="container">
+<div class="sec-head c rv"><span class="tag">Common Questions</span><h2 class="sec-title">Frequently Asked Questions</h2></div>
+<div class="faq-list">
+
+<div class="fi rv"><div class="fq" onclick="this.parentElement.classList.toggle('open')"><span class="fq-txt">What areas do you serve?</span><span class="fq-ico"><i class="fas fa-plus"></i></span></div><div class="fa"><p>Calgary, Northwest Calgary, Northeast Calgary, Southwest Calgary, Southeast Calgary, and Cochrane.</p></div></div>
+
+<div class="fi rv"><div class="fq" onclick="this.parentElement.classList.toggle('open')"><span class="fq-txt">Do you provide free quotes?</span><span class="fq-ico"><i class="fas fa-plus"></i></span></div><div class="fa"><p>Yes. You will receive a free quote before work begins, with no obligation.</p></div></div>
+
+<div class="fi rv"><div class="fq" onclick="this.parentElement.classList.toggle('open')"><span class="fq-txt">Do you charge overtime or hidden fees?</span><span class="fq-ico"><i class="fas fa-plus"></i></span></div><div class="fa"><p>No. Westpro states that it offers upfront pricing with no overtime charge or hidden fees.</p></div></div>
+
+<div class="fi rv"><div class="fq" onclick="this.parentElement.classList.toggle('open')"><span class="fq-txt">Do you offer financing?</span><span class="fq-ico"><i class="fas fa-plus"></i></span></div><div class="fa"><p>Yes. Westpro partners with Financeit.ca to offer flexible payment options.</p></div></div>
+
+<div class="fi rv"><div class="fq" onclick="this.parentElement.classList.toggle('open')"><span class="fq-txt">What kind of electrical work do you specialize in?</span><span class="fq-ico"><i class="fas fa-plus"></i></span></div><div class="fa"><p>Residential electrical services, including repairs, troubleshooting, renovations, inspections, panel upgrades, lighting, EV charging stations, hot tubs, smoke detectors, surge protection, aluminum wiring work, and smart home automation.</p></div></div>
+
+</div>
+</div>
+</section>
+
+
+<!-- AREAS -->
+
+<section class="areas">
+<div class="container">
+<div class="sec-head rv"><span class="tag">Where We Work</span><h2 class="sec-title">Service Areas</h2><p class="sec-sub">Proudly serving these communities with licensed residential services.</p></div>
+<div class="chips rv">
+
+<span class="chip"><i class="fas fa-map-marker-alt"></i> Calgary</span>
+
+<span class="chip"><i class="fas fa-map-marker-alt"></i> Northwest Calgary</span>
+
+<span class="chip"><i class="fas fa-map-marker-alt"></i> Northeast Calgary</span>
+
+<span class="chip"><i class="fas fa-map-marker-alt"></i> Southwest Calgary</span>
+
+<span class="chip"><i class="fas fa-map-marker-alt"></i> Southeast Calgary</span>
+
+<span class="chip"><i class="fas fa-map-marker-alt"></i> and Cochrane</span>
+
+</div>
+</div>
+</section>
+
+
+<!-- CTA BAND -->
+<div class="cta-band">
+<div class="cta-band-inner">
+<div><h2>Ready to Get Started?</h2><p>Call now and speak directly with a licensed professional — free quote, no obligation.</p></div>
+<a href="tel:(403) 891-3257" class="btn-cta-wh"><i class="fas fa-phone"></i> (403) 891-3257</a>
+</div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<div class="container">
+<div class="sec-head rv"><span class="tag">Get In Touch</span><h2 class="sec-title">Contact Us</h2><p class="sec-sub">Ready to get started? Call for a free quote — speak directly with a qualified professional.</p></div>
+<div class="contact-grid">
+<div class="cc-list rvl">
+<a href="tel:(403) 891-3257" class="cc"><div class="cc-ico"><i class="fas fa-phone"></i></div><div><div class="cc-lbl">Phone</div><div class="cc-val">(403) 891-3257</div></div></a>
+<div class="cc"><div class="cc-ico"><i class="fas fa-map-marker-alt"></i></div><div><div class="cc-lbl">Location</div><div class="cc-val">122 Valley Stream Circle NW, Calgary, AB, T3B 5W2</div></div></div>
+
+<a href="tel:(403) 891-3257" class="btn btn-o" style="margin-top:1rem;justify-content:center"><i class="fas fa-phone"></i> Call Now — Free Quote</a>
+<div class="cc" style="margin-top:.75rem;border-left-color:var(--orange);background:var(--orange-light)"><div class="cc-ico" style="background:var(--orange)"><i class="fas fa-hand-holding-usd"></i></div><div><div class="cc-lbl">Financing</div><div class="cc-val">Flexible options via <a href="https://www.financeit.ca/" target="_blank" rel="noopener" style="color:var(--orange)">Financeit.ca</a></div></div></div>
+</div>
+
+<div class="map-wrap rvr"><iframe src="https://maps.google.com/maps?q=122%20Valley%20Stream%20Circle%20NW%2C%20Calgary%2C%20AB%2C%20T3B%205W2&output=embed" allowfullscreen loading="lazy"></iframe></div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="ft">
+<div class="ft-brand">
+<div class="logo" style="margin-bottom:.5rem"><div class="logo-text"><span class="logo-top" style="color:var(--cyan)">WESTPRO</span><span class="logo-bot">ELECTRICAL SERVICES</span></div></div>
+<p>Your Local Electrician in the Calgary Area. Residential Electrical Services.</p>
+</div>
+<div class="ft-col"><h4>Quick Links</h4><ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#process">Process</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul></div>
+<div class="ft-col"><h4>Contact</h4><ul>
+<li><a href="tel:(403) 891-3257"><i class="fas fa-phone"></i> (403) 891-3257</a></li>
+
+<li style="line-height:1.4"><i class="fas fa-map-marker-alt"></i> 122 Valley Stream Circle NW, Calgary, AB, T3B 5W2</li>
+</ul></div>
+</div>
+<div class="fb-bar"><p>&copy; 2026 WESTPRO ELECTRICAL SERVICES. All rights reserved.</p></div>
+</footer>
+
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<div class="mob-float"><a href="tel:(403) 891-3257"><i class="fas fa-phone"></i> Call Now</a></div>
+
+<script>
+const ham=document.getElementById('ham'),mn=document.getElementById('mobNav');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mn.classList.toggle('open')});
+mn.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ham.classList.remove('open');mn.classList.remove('open')}));
+const btt=document.getElementById('btt');window.addEventListener('scroll',()=>{btt.classList.toggle('show',window.scrollY>400)});
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv,.rvl,.rvr').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
